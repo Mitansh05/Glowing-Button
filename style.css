@@ -7,7 +7,7 @@ button{
     color: rgb(255, 255, 255);
     background-color: rgb(70, 70, 70);
     border-radius: 20px;
-    width: 100px;
+    width: 150px;
 }
 
 .btn {
@@ -35,11 +35,7 @@ button{
 
   .btn::before {
     content: "";
-    background: linear-gradient(
-      45deg,
-      #FF0000, #FF7300, #FFFB00, #48FF00,
-      #00FFD5, #002BFF, #FF00C8, #FF0000
-    );
+    background: linear-gradient(50deg, red, orange, lightblue, blue, white);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -47,8 +43,8 @@ button{
     z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
+    filter: blur(20px);
+    animation: glowing 10s linear infinite;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
     opacity: 0;
